@@ -15,7 +15,7 @@ export default function Contact() {
   }
 
   return (
-    <div className='text-center' style={styles.gallery}>
+    <div className='container-fluid d-flex justify-content-center text-center' style={styles.gallery}>
       <Card />
     </div>
   );

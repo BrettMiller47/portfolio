@@ -68,13 +68,13 @@ export default function Card() {
       <h3 id='contact' style={styles.header}>Contact Form</h3>
       <form id='contact-form' style={styles.form}>
         <label style={styles.label} className="sr-only" >Name</label>
-        <input style={styles.input} type="text" className="form-control mb-2 mr-sm-2" id="name" placeholder="Jane Doe"></input>
+        <input style={styles.input} type="text" className="form-control mb-2" id="name" placeholder="Jane Doe"></input>
 
         <label style={styles.label} className="sr-only" >Email</label>
-        <input style={styles.input} type="text" className="form-control" id="email" placeholder="janedoe@email.com"></input>
+        <input style={styles.input} type="text" className="form-control mb-2" id="email" placeholder="janedoe@email.com"></input>
 
         <label style={styles.label} >Message</label>
-        <textarea style={styles.input} class="form-control" id="message" rows="3" placeholder='Hi Brett, I really liked your website!'></textarea>
+        <textarea style={styles.input} className="form-control mb-2" id="message" rows="3" placeholder='Hi Brett, I really liked your website!'></textarea>
         
         <div className='justify-content-center'>
           <button type="submit" style={styles.button} onClick={handleSubmit}>Submit</button>
