@@ -1,8 +1,8 @@
-# personal-portfolio
+# portfolio
 
 A portfolio to showcase projects and information about Brett Miller.
 
-Deployed Application: https://brettmiller47.github.io/personal-portfolio
+Deployed Application: https://brettmiller47.github.io/portfolio
 
 ![Desktop View Light Theme](./assets/desktop-light.jpeg)
 ![Desktop Portfolio View Light Theme](./assets/desktop-pipeline-light.jpeg)
