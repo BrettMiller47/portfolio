@@ -77,7 +77,7 @@ export default function Card() {
         <textarea style={styles.input} className="form-control mb-2" id="message" rows="3" placeholder='Hi Brett, I really liked your website!'></textarea>
         
         <div className='justify-content-center'>
-          <button type="submit" style={styles.button} onClick={handleSubmit}>Submit</button>
+          <button type="submit" className='btn' style={styles.button} onClick={handleSubmit}>Submit</button>
         </div>
       </form>
     </div>
