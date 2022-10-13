@@ -45,8 +45,8 @@ export default function Nav() {
       display: 'flex',
       justifyContent: 'space-evenly',
       color: 'gray',
-      padding: '1rem',
-      textAlign: 'center'
+      padding: '.5rem',
+      textAlign: 'center',
     }
   };
 
