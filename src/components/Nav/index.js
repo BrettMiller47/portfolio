@@ -55,7 +55,7 @@ export default function Nav() {
       <div className='row w-100 m-1 d-flex flex-column text-center align-items-center'>
         <div className='col-12'>
           {/* HomePage Redirect */}
-          <Link to='/' style={styles.name}>
+          <Link to='/portfolio' style={styles.name}>
             Brett Miller
           </Link>
         </div>
@@ -63,7 +63,7 @@ export default function Nav() {
       <div className='row d-flex flex-row' style={styles.rowLinks}>
         {/* Resume */}
         <div className='col-2'>
-          <Link to='/' className='nav-link' onClick={redirectResume}>
+          <Link to='/portfolio' className='nav-link' onClick={redirectResume}>
             Resum&eacute;
           </Link>
         </div>
@@ -77,7 +77,7 @@ export default function Nav() {
           
         {/* Portfolio */}
         <div className='col-2'>
-          <Link to='/' className='nav-link' onClick={redirectPortfolio}>
+          <Link to='/portfolio' className='nav-link' onClick={redirectPortfolio}>
             Portfolio
           </Link>
         </div>
