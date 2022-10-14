@@ -20,14 +20,14 @@ export default function Card() {
     },
     form: {
       boxShadow: darkTheme
-        ? `1px 1px 10px #b4318d`
+        ? `1px 1px 10px #c2c2a3`
         : `1px 1px 10px #581845`,
       margin: '1.5rem',
       display: 'flex',
       flexDirection: 'column',
       background: darkTheme
-        ? '#000025'
-        : '#dcd0bc',
+        ? '#090A22'
+        : '#e0e0d1',
       width: '400px',
       justifyItems: 'center',
       padding: '2rem',
