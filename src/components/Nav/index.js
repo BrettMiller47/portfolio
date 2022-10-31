@@ -1,6 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import ThemeButton from '../ThemeButton';
 import { useTheme } from '../../utils/ThemeContext';
 
 export default function Nav() {
@@ -24,26 +23,75 @@ export default function Nav() {
   };
 
   const { darkTheme } = useTheme();
+  const { toggleTheme } = useTheme();
+
+  const [isHoverName, setIsHoverName] = useState(false); 
+  const [isHoverResume, setIsHoverResume] = useState(false); 
+  const [isHoverGithub, setIsHoverGithub] = useState(false); 
+  const [isHoverPortfolio, setIsHoverPortfolio] = useState(false); 
+  const [isHoverContact, setIsHoverContact] = useState(false); 
+  const [isHoverTheme, setIsHoverTheme] = useState(false); 
   
   const handleMouseEnter = (e) => {
-    e.target.style['color'] = '#f77fbe';
+    let id = e.target.id;
+    console.log(id);
+    switch (id) {
+      case 'name':
+        setIsHoverName(true);
+        break;
+      case 'resume':
+        console.log('resume')
+        setIsHoverResume(true);
+        break;
+      case 'github':
+        setIsHoverGithub(true);
+        break;
+      case 'portfolio':
+        setIsHoverPortfolio(true);
+        break;
+      case 'contact':
+        setIsHoverContact(true);
+        break; 
+      case 'theme':
+        setIsHoverTheme(true);
+        break;
+      default:
+        console.log('No id associated with onMouseEnter action!');
+        break;
+    }
   };
 
   const handleMouseLeave = (e) => {
     let id = e.target.id;
+    console.log(id);
     switch (id) {
       case 'name':
-        if (darkTheme) {
-          e.target.style['color'] = '#fff';
-        } else {
-          e.target.style['color'] = '#090A22';
-        }
+        setIsHoverName(false);
+        break;
+      case 'resume':
+        console.log('resume')
+        setIsHoverResume(false);
+        break;
+      case 'github':
+        setIsHoverGithub(false);
+        break;
+      case 'portfolio':
+        setIsHoverPortfolio(false);
+        break;
+      case 'contact':
+        setIsHoverContact(false);
+        break; 
+      case 'theme':
+        setIsHoverTheme(false);
         break;
       default:
-        e.target.style['color'] = 'gray';
+        console.log('No id associated with onMouseLeave action!');
         break;
     }
   };
+
+  const highlight = '#f77fbe';
+  const noHighlight = 'gray';
 
   const styles = {
     nav: {
@@ -57,16 +105,46 @@ export default function Nav() {
     name: {
       fontSize: '2rem',
       color: darkTheme
-        ? '#fff'
-        : '#090A22',
+        ? (isHoverName
+            ? highlight
+            : '#fff'
+          )
+        : (isHoverName
+            ? highlight
+            : '#090A22'
+          ),
       textDecoration: 'none'
     },
-    rowLinks: {
+    links: {
       display: 'flex',
       justifyContent: 'space-evenly',
-      color: 'gray',
       padding: '.5rem',
       textAlign: 'center',
+    },
+    resume: {
+      color: isHoverResume
+        ? highlight
+        : noHighlight
+    },
+    github: {
+      color: isHoverGithub
+        ? highlight
+        : noHighlight
+    },
+    portfolio: {
+      color: isHoverPortfolio
+        ? highlight
+        : noHighlight
+    },
+    contact: {
+      color: isHoverContact
+        ? highlight
+        : noHighlight
+    },
+    theme: {
+      color: isHoverTheme
+        ? highlight
+        : noHighlight
     }
   };
 
@@ -84,10 +162,12 @@ export default function Nav() {
           </Link>
         </div>
       </div>
-      <div className='row d-flex flex-row' style={styles.rowLinks}>
+      <div className='row d-flex flex-row' style={styles.links}>
         {/* Resume */}
         <div className='col-2'>
           <Link to='/portfolio' className='nav-link'
+            id='resume'
+            style={styles.resume}
             onClick={redirectResume}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -99,6 +179,8 @@ export default function Nav() {
         {/* GitHub */}
         <div className='col-2'>
           <a className='nav-link' href='https://github.com/brettmiller47' target='_blank' rel="noreferrer"
+            id='github'
+            style={styles.github}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
@@ -109,6 +191,8 @@ export default function Nav() {
         {/* Portfolio */}
         <div className='col-2'>
           <Link to='/portfolio' className='nav-link'
+            id='portfolio'
+            style={styles.portfolio}
             onClick={redirectPortfolio}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -120,6 +204,8 @@ export default function Nav() {
         {/* Contact */}
         <div className='col-2'>
           <Link className='nav-link'
+            id='contact'
+            style={styles.contact}
             onClick={redirectContact}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -128,11 +214,16 @@ export default function Nav() {
           </Link>
         </div>
           
-        <div className='col-2'
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <ThemeButton />
+        <div className='col-2'>
+          <a href='/' className='nav-link'
+            id='theme'
+            style={styles.theme}
+            onClick={toggleTheme}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            Theme
+          </a>
         </div>
           
       </div>
