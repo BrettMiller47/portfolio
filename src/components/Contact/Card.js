@@ -87,7 +87,7 @@ export default function Card() {
 
   return (
     <div className='row d-flex w-100 justify-content-center'>
-      <h3 id='contact' style={styles.header}>Contact Form</h3>
+      <h3 id='contactForm' style={styles.header}>Contact Form</h3>
       <form id='contact-form' style={styles.form}>
         <label style={styles.label} className="sr-only" >Name</label>
         <input style={styles.input} type="text" className="form-control mb-2" placeholder="Jane Doe"></input>

@@ -24,7 +24,7 @@ export default function ProjectShowcase() {
   ];
   
   return (
-    <div id='portfolio' className='row align-items-center justify-content-center mx-2 my-3 p-2'>
+    <div id='portfolioCards' className='row align-items-center justify-content-center mx-2 my-3 p-2'>
       {cards.map((card) => ( 
         <Card
           header={card.header}

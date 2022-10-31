@@ -6,19 +6,19 @@ export default function Nav() {
 
   const redirectPortfolio = () => {
     setTimeout( () =>
-      document.getElementById("portfolio").scrollIntoView()
+      document.getElementById("portfolioCards").scrollIntoView()
       , 150);
   };
 
   const redirectResume = () => {
     setTimeout( () =>
-      document.getElementById("resume").scrollIntoView()
+      document.getElementById("resumeBtn").scrollIntoView()
       , 150);
   };
 
   const redirectContact = () => {
     setTimeout( () =>
-      document.getElementById("contact").scrollIntoView()
+      document.getElementById("contactForm").scrollIntoView()
       , 150);
   };
 
