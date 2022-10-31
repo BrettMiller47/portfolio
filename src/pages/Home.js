@@ -2,7 +2,7 @@ import React from 'react';
 import BlackHole from '../components/BlackHole/index';
 import Resume from '../components/Resume/index';
 import Projects from '../components/Projects/index'
-import PipelineLink from '../components/Pipeline/Link';
+import PipelineLink from '../components/PipelineLink';
 
 export default function Home() {
 

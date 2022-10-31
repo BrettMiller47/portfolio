@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import coneLight from '../assets/images/coneLight.png';
-import coneDark from '../assets/images/coneDark.png';
-import { useTheme } from '../../utils/ThemeContext';
+import coneLight from './assets/images/coneLight.png';
+import coneDark from './assets/images/coneDark.png';
+import { useTheme } from '../utils/ThemeContext';
 
 export default function PipelineLink() {
   
   const { darkTheme } = useTheme(); 
+
+  const [isHover, setIsHover] = useState(false);
+  
+  const handleMouseEnter = () => {
+    setIsHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHover(false);
+  };
 
   let navigate = useNavigate(); 
   const routeChange = () =>{ 
@@ -25,7 +35,9 @@ export default function PipelineLink() {
       paddingBottom: '3rem'
     },
     redirect: {
-      color: 'gray',
+      color: isHover
+        ? '#f77fbe'
+        : 'gray',
       fontSize: '20px',
       fontWeight: 'bold',
       textAlign: 'center'
@@ -41,7 +53,12 @@ export default function PipelineLink() {
   return (
     <div className='container-fluid'>
       <div className='row' style={styles.row}>
-        <Link to='/pipeline' onClick={routeChange} className='col-12' style={styles.redirect}>
+        <Link to='/pipeline' className='col-12'
+          style={styles.redirect}
+          onClick={routeChange}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <img src={darkTheme ? coneDark : coneLight} alt='construction cone' style={styles.cone}></img>
           Projects coming soon...
           <img src={darkTheme ? coneDark : coneLight} alt='construction cone' style={styles.cone}></img>
