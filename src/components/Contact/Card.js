@@ -28,7 +28,7 @@ export default function Card() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let name = document.getElementById('name').textContent;
+    let name = document.getElementById('name').value;
     let subject = 'CONTACT FORM message from ' + name;
     let body = document.getElementById('body').value;
     window.location.href = 'mailto:brett.miller47@yahoo.com?subject=' + subject + '&body=' + body;
