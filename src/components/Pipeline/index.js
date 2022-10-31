@@ -54,7 +54,7 @@ export default function Pipeline() {
         <div className='container-fluid' style={styles.container}>
           <h3 style={styles.constructionHead}>
             <img src={darkTheme ? coneDark : coneLight} alt='construction cone' style={styles.coneLeft}></img>
-            Under Construction
+              Active Projects
             <img src={darkTheme ? coneDark : coneLight} alt='construction cone' style={styles.coneRight}></img>
           </h3>
           <PipelineShowcase />
