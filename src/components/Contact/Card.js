@@ -108,7 +108,7 @@ export default function Card() {
         {error && <h5 style={{color: 'red'}}>{error}</h5>} */}
 
         <label style={styles.label} >Message</label>
-        <textarea id='body' style={styles.input} className="form-control mb-2" rows="3" placeholder='Hi Brett, I really liked your website!'></textarea>
+        <textarea id='body' style={styles.input} className="form-control mb-2" rows="3" placeholder='Hi Brett, I really like your website!'></textarea>
         
         <div className='justify-content-center'>
           <button type="submit" className='btn' style={styles.button} onClick={handleSubmit}>
