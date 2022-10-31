@@ -28,8 +28,8 @@ export default function Card() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let name = document.getElementById('name').value;
-    let subject = 'CONTACT FORM message from ' + name;
+    let subjName = document.getElementById('subjName').value;
+    let subject = 'CONTACT FORM message from ' + subjName;
     let body = document.getElementById('body').value;
     window.location.href = 'mailto:brett.miller47@yahoo.com?subject=' + subject + '&body=' + body;
     document.getElementById('contact-form').reset();
@@ -95,7 +95,7 @@ export default function Card() {
       <h3 id='contactForm' style={styles.header}>Contact Form</h3>
       <form id='contact-form' style={styles.form}>
         <label style={styles.label} className="sr-only" >Name</label>
-        <input id='name' style={styles.input} type="text" className="form-control mb-2" placeholder="Jane Doe"></input>
+        <input id='subjName' style={styles.input} type="text" className="form-control mb-2" placeholder="Jane Doe"></input>
 
         {/* <label style={styles.label} className="sr-only" >Email</label>
         <input
