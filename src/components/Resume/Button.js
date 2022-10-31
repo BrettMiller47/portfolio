@@ -9,15 +9,16 @@ export default function Button() {
 
   const styles = {
     buttonLink: {
-      width: '13rem',
+      width: '13.4rem',
     },
     button: {
       background: darkTheme
-        ? '#2793F1'
+        ? '#FF4DA6'
         : '#e60073',
       color: darkTheme
-        ? '#f4f4d7'
-        : '#f4f4d7'
+        ? '#01022d'
+        : '#f4f4d7',
+      fontWeight: 'bold'
     }
   };
 
