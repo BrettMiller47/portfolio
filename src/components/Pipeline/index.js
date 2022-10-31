@@ -33,7 +33,7 @@ export default function Pipeline() {
     check: {
       height: '3rem',
       width: '5.2rem',
-      marginRight: '1rem',
+      // marginRight: '.5rem',
     },
     constructionHead: {
       color: '#F87431',
@@ -60,7 +60,8 @@ export default function Pipeline() {
           <PipelineShowcase />
           <div className='row' style={styles.separation}>
             <img src={darkTheme ? checkDark : checkLight} alt='check mark' style={styles.check}></img>
-            Published Projects
+              Published Projects
+            <img src={darkTheme ? checkDark : checkLight} alt='check mark' style={styles.check}></img>
           </div>
         </div>
       </div>
