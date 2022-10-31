@@ -24,6 +24,26 @@ export default function Nav() {
   };
 
   const { darkTheme } = useTheme();
+  
+  const handleMouseEnter = (e) => {
+    e.target.style['color'] = '#f77fbe';
+  };
+
+  const handleMouseLeave = (e) => {
+    let id = e.target.id;
+    switch (id) {
+      case 'name':
+        if (darkTheme) {
+          e.target.style['color'] = '#fff';
+        } else {
+          e.target.style['color'] = '#090A22';
+        }
+        break;
+      default:
+        e.target.style['color'] = 'gray';
+        break;
+    }
+  };
 
   const styles = {
     nav: {
@@ -55,7 +75,11 @@ export default function Nav() {
       <div className='row w-100 m-1 d-flex flex-column text-center align-items-center'>
         <div className='col-12'>
           {/* HomePage Redirect */}
-          <Link to='/portfolio' style={styles.name}>
+          <Link to='/portfolio' style={styles.name}
+            id="name"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             Brett Miller
           </Link>
         </div>
@@ -63,33 +87,51 @@ export default function Nav() {
       <div className='row d-flex flex-row' style={styles.rowLinks}>
         {/* Resume */}
         <div className='col-2'>
-          <Link to='/portfolio' className='nav-link' onClick={redirectResume}>
+          <Link to='/portfolio' className='nav-link'
+            onClick={redirectResume}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             Resum&eacute;
           </Link>
         </div>
           
         {/* GitHub */}
         <div className='col-2'>
-          <a className='nav-link' href='https://github.com/brettmiller47' target='_blank' rel="noreferrer">
+          <a className='nav-link' href='https://github.com/brettmiller47' target='_blank' rel="noreferrer"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             GitHub
           </a>
         </div>
           
         {/* Portfolio */}
         <div className='col-2'>
-          <Link to='/portfolio' className='nav-link' onClick={redirectPortfolio}>
+          <Link to='/portfolio' className='nav-link'
+            onClick={redirectPortfolio}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             Portfolio
           </Link>
         </div>
           
         {/* Contact */}
         <div className='col-2'>
-          <Link className='nav-link' onClick={redirectContact}>
+          <Link className='nav-link'
+            onClick={redirectContact}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             Contact
           </Link>
         </div>
           
-        <div className='col-2'>
+        <div className='col-2'
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <ThemeButton />
         </div>
           
