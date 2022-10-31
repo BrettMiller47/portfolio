@@ -62,7 +62,7 @@ export default function Card() {
     },
     button: {
       background: darkTheme
-        ? '#2095ac'
+        ? '#2793F1'
         : '#581845',
       color: darkTheme
         ? '#fff'

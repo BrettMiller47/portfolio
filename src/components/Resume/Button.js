@@ -13,10 +13,10 @@ export default function Button() {
     },
     button: {
       background: darkTheme
-        ? '#2095ac'
+        ? '#2793F1'
         : '#e60073',
       color: darkTheme
-        ? '#fff'
+        ? '#f4f4d7'
         : '#f4f4d7'
     }
   };

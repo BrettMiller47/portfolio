@@ -9,7 +9,7 @@ export default function IntroText() {
   const styles = {
     highlight: {
       color: darkTheme 
-        ? '#2095ac'
+        ? '#2793F1'
         : '#e60073',
     fontWeight: 'bold'
     }
