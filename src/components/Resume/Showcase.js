@@ -10,9 +10,9 @@ export default function ResumeShowcase() {
       listItems: [
         " - Git",
         " - MERN",
-        " - MongoDB, MySQL",
+        " - MongoDB and MySQL",
+        " - Agile and Computer Science",
         " - HTML5, CSS3, JavaScript, jQuery",
-        " - Agile, Computer Science, Database Theory",
       ]
     },
     {
@@ -71,7 +71,7 @@ export default function ResumeShowcase() {
       margin: 0,
       padding: 0,
       color: '#fff',
-      fontSize:'1rem'
+      fontSize: '1rem'
     }
   };
 
