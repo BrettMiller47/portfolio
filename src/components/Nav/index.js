@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../../utils/ThemeContext';
 
@@ -25,6 +25,14 @@ export default function Nav() {
   const { darkTheme } = useTheme();
   const { toggleTheme } = useTheme();
 
+  useEffect(() => {
+    let faviconEl = document.getElementById('favicon');
+    darkTheme
+      ? faviconEl.href = 'portfolio/faviconDark.ico'
+      : faviconEl.href = 'portfolio/faviconLight.ico'
+  });
+
+
   const [isHoverName, setIsHoverName] = useState(false); 
   const [isHoverResume, setIsHoverResume] = useState(false); 
   const [isHoverGithub, setIsHoverGithub] = useState(false); 
@@ -34,7 +42,6 @@ export default function Nav() {
   
   const handleMouseEnter = (e) => {
     let id = e.target.id;
-    console.log(id);
     switch (id) {
       case 'name':
         setIsHoverName(true);
@@ -63,7 +70,6 @@ export default function Nav() {
 
   const handleMouseLeave = (e) => {
     let id = e.target.id;
-    console.log(id);
     switch (id) {
       case 'name':
         setIsHoverName(false);
