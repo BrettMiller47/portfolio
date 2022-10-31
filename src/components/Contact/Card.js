@@ -1,18 +1,36 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useTheme } from '../../utils/ThemeContext';
 
 export default function Card() {
 
   const { darkTheme } = useTheme();
 
+  // ---- EMAIL VALIDATION ----
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState(null);
+
+  function isValidEmail(email) {
+    if (email.length === 0) {
+      return true;
+    }
+    return /\S+@\S+\.\S+/.test(email);
+  }
+
+  const handleChange = event => {
+    if (!isValidEmail(event.target.value)) {
+      setError('Email is invalid');
+    } else {
+      setError(null);
+    }
+
+    setEmail(event.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
     document.getElementById('contact-form').reset();
-    console.log(name + email + message);
   }
+  // ----  ----
 
   const styles = {
     container: {
@@ -60,21 +78,32 @@ export default function Card() {
     },
     input: {
       color: '#581845'
+    },
+    inputError: {
+      background: '#ffbaba',
+      border: 'red solid 1.5px'
     }
   };
 
   return (
-    <div class='row d-flex w-100 justify-content-center'>
+    <div className='row d-flex w-100 justify-content-center'>
       <h3 id='contact' style={styles.header}>Contact Form</h3>
       <form id='contact-form' style={styles.form}>
         <label style={styles.label} className="sr-only" >Name</label>
-        <input style={styles.input} type="text" className="form-control mb-2" id="name" placeholder="Jane Doe"></input>
+        <input style={styles.input} type="text" className="form-control mb-2" placeholder="Jane Doe"></input>
 
         <label style={styles.label} className="sr-only" >Email</label>
-        <input style={styles.input} type="text" className="form-control mb-2" id="email" placeholder="janedoe@email.com"></input>
+        <input
+          id="email"
+          name="email"
+          value={email}
+          onChange={handleChange}
+          style={error ? styles.inputError : styles.input} type="text" className="form-control mb-2" placeholder="janedoe@email.com">  
+        </input>
+        {error && <h5 style={{color: 'red'}}>{error}</h5>}
 
         <label style={styles.label} >Message</label>
-        <textarea style={styles.input} className="form-control mb-2" id="message" rows="3" placeholder='Hi Brett, I really liked your website!'></textarea>
+        <textarea style={styles.input} className="form-control mb-2" rows="3" placeholder='Hi Brett, I really liked your website!'></textarea>
         
         <div className='justify-content-center'>
           <button type="submit" className='btn' style={styles.button} onClick={handleSubmit}>Submit</button>
