@@ -66,7 +66,7 @@ export default function Card() {
     },
     button: {
       background: darkTheme
-        ? '#2793F1'
+        ? '#A53C85'
         : '#581845',
       color: darkTheme
         ? '#fff'
@@ -82,7 +82,7 @@ export default function Card() {
       fontSize: '1.3rem'
     },
     input: {
-      color: '#581845'
+      color: '#A53C85'
     },
     inputError: {
       background: '#ffbaba',

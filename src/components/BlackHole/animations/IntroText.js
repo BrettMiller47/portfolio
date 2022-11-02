@@ -10,7 +10,7 @@ export default function IntroText() {
     highlight: {
       color: darkTheme 
         ? '#FF4DA6'
-        : '#e60073',
+        : '#A53C85',
     fontWeight: 'bold'
     }
   };

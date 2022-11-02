@@ -14,7 +14,7 @@ export default function Button() {
     button: {
       background: darkTheme
         ? '#FF4DA6'
-        : '#e60073',
+        : '#A53C85',
       color: darkTheme
         ? '#01022d'
         : '#f4f4d7',

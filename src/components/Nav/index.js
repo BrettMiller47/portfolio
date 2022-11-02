@@ -96,7 +96,7 @@ export default function Nav() {
     }
   };
 
-  const highlight = '#f77fbe';
+  const highlight = '#A53C85';
   const noHighlight = 'gray';
 
   const styles = {

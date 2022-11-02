@@ -36,7 +36,7 @@ export default function PipelineLink() {
     },
     redirect: {
       color: isHover
-        ? '#f77fbe'
+        ? '#A53C85'
         : 'gray',
       fontSize: '20px',
       fontWeight: 'bold',

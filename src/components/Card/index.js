@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import { useTheme } from '../../utils/ThemeContext';
+import "rc-tooltip/assets/bootstrap.css";
+import Tooltip from "rc-tooltip";
 
 export default function Card(props) {
 
@@ -68,12 +70,19 @@ export default function Card(props) {
     <div className='col-md-8 col-lg-4' style={styles.card} key={props.desc}>
       {/* If there is a repo */}
       {isProjectSrc
-        ? <a href={props.projectSrc} style={styles.projSrc} target='_blank' rel='noreferrer'
+        ? <Tooltip
+            placement="top"
+            overlay={<span>Check out the full project!</span>}
+            showArrow="false"
+          >
+            <a href={props.projectSrc} style={styles.projSrc} target='_blank' rel='noreferrer'
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-          >
-            <h5 id={props.header} style={styles.header}>{props.header}</h5>
-          </a>
+            >
+              <h5 id={props.header} style={styles.header}>{props.header}</h5>
+            </a>
+          </Tooltip>
+          
         : <h5 id={props.header} style={styles.header}>{props.header}</h5>
       }
       <p id={props.desc} style={styles.desc}>{props.desc}</p>
