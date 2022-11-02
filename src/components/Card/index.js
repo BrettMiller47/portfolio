@@ -23,6 +23,7 @@ export default function Card(props) {
       background: darkTheme
         ? '#000025'
         : '#dcd0bc',
+      height: '29rem'
     },
     header: {
       color: darkTheme
@@ -45,6 +46,7 @@ export default function Card(props) {
       width: mediaWidth,
       justifyContent: 'space-around',
       paddingBottom: '1rem',
+      overflow: 'hidden',
     },
   };
 

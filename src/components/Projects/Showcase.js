@@ -8,9 +8,9 @@ export default function ProjectShowcase() {
   const cards = [
     {
       header: 'MySQL Workforce Manager',
-      desc: 'A command-line application built with Inquirer and Sequelize.',
-      imgSrc: '',
-      iFrameSrc: workforceGif,
+      desc: 'A command-line application using Sequelize.',
+      imgSrc: workforceGif,
+      iFrameSrc: '',
       iFrameTitle: 'MySQL Workforce Manager',
       projectSrc: 'https://github.com/BrettMiller47/sql-employee-tracker'
     },
