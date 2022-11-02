@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useTheme } from '../../utils/ThemeContext';
 
 export default function Card(props) {
@@ -8,6 +8,14 @@ export default function Card(props) {
   const isProjectSrc = (props.projectSrc.length > 1);
   const isIframe = (props.iFrameSrc.length > 1);
   
+  const [isHover, setIsHover] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHover(true)
+  };
+  const handleMouseLeave = () => {
+    setIsHover(false)
+  };
+
   // recommend  w *.5625 = h
   const mediaWidth = '100%';
   const mediaHeight = '23rem'
@@ -27,8 +35,14 @@ export default function Card(props) {
     },
     header: {
       color: darkTheme
-        ? `#f4f4d7`
-        : '#581845',
+        ? (isHover
+          ? '#f77fbe'
+          : '#f4f4d7'
+        )
+        : (isHover
+          ? '#f77fbe'
+          : '#581845'
+        ),
       fontSize: '2rem',
       margin: '1rem',
     },
@@ -54,7 +68,10 @@ export default function Card(props) {
     <div className='col-md-8 col-lg-4' style={styles.card} key={props.desc}>
       {/* If there is a repo */}
       {isProjectSrc
-        ? <a href={props.projectSrc} style={styles.projSrc} target='_blank' rel='noreferrer'>
+        ? <a href={props.projectSrc} style={styles.projSrc} target='_blank' rel='noreferrer'
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             <h5 id={props.header} style={styles.header}>{props.header}</h5>
           </a>
         : <h5 id={props.header} style={styles.header}>{props.header}</h5>
