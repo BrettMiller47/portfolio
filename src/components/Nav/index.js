@@ -123,9 +123,15 @@ export default function Nav() {
     },
     links: {
       display: 'flex',
+      flexWrap: 'wrap',
+      flexDirection: 'row',
       justifyContent: 'space-evenly',
       padding: '.5rem',
       textAlign: 'center',
+    },
+    link: {
+      width: 'max-content',
+      padding: '2px'
     },
     resume: {
       color: isHoverResume
@@ -168,9 +174,9 @@ export default function Nav() {
           </Link>
         </div>
       </div>
-      <div className='row d-flex flex-row' style={styles.links}>
+      <div className='container' style={styles.links}>
         {/* Resume */}
-        <div className='col-2'>
+        <div style={styles.link}>
           <Link to='/portfolio' className='nav-link'
             id='resume'
             style={styles.resume}
@@ -183,7 +189,7 @@ export default function Nav() {
         </div>
           
         {/* GitHub */}
-        <div className='col-2'>
+        <div style={styles.link}>
           <a className='nav-link' href='https://github.com/brettmiller47' target='_blank' rel="noreferrer"
             id='github'
             style={styles.github}
@@ -195,7 +201,7 @@ export default function Nav() {
         </div>
           
         {/* Portfolio */}
-        <div className='col-2'>
+        <div style={styles.link}>
           <Link to='/portfolio' className='nav-link'
             id='portfolio'
             style={styles.portfolio}
@@ -208,7 +214,7 @@ export default function Nav() {
         </div>
           
         {/* Contact */}
-        <div className='col-2'>
+        <div style={styles.link}>
           <Link className='nav-link'
             id='contact'
             style={styles.contact}
@@ -220,7 +226,7 @@ export default function Nav() {
           </Link>
         </div>
           
-        <div className='col-2'>
+        <div style={styles.link}>
           <a href='/' className='nav-link'
             id='theme'
             style={styles.theme}
