@@ -61,7 +61,6 @@ export default function Pipeline() {
           <div className='row' style={styles.separation}>
             <img src={darkTheme ? checkDark : checkLight} alt='check mark' style={styles.check}></img>
               Published Projects
-            <img src={darkTheme ? checkDark : checkLight} alt='check mark' style={styles.check}></img>
           </div>
         </div>
       </div>
