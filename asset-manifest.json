@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.eeab14fa.css",
-    "main.js": "/portfolio/static/js/main.9c50199e.js",
+    "main.js": "/portfolio/static/js/main.df827488.js",
     "static/js/787.0c3f432a.chunk.js": "/portfolio/static/js/787.0c3f432a.chunk.js",
     "static/media/workforceManager.gif": "/portfolio/static/media/workforceManager.c3a1450d59b65fa9f198.gif",
     "static/media/arb.png": "/portfolio/static/media/arb.44f11937a6c583605978.png",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.634da9afc149857ef038.pdf",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.7049cbf9fa99236f7208.pdf",
     "static/media/seleniumLogo.png": "/portfolio/static/media/seleniumLogo.34db6ec24da492c5d3af.png",
     "static/media/githubAltLogo.webp": "/portfolio/static/media/githubAltLogo.cc60961e5080acb77c43.webp",
     "static/media/mernLogo.png": "/portfolio/static/media/mernLogo.797f154ce5fcf7edb6fb.png",
     "index.html": "/portfolio/index.html",
     "main.eeab14fa.css.map": "/portfolio/static/css/main.eeab14fa.css.map",
-    "main.9c50199e.js.map": "/portfolio/static/js/main.9c50199e.js.map",
+    "main.df827488.js.map": "/portfolio/static/js/main.df827488.js.map",
     "787.0c3f432a.chunk.js.map": "/portfolio/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eeab14fa.css",
-    "static/js/main.9c50199e.js"
+    "static/js/main.df827488.js"
   ]
 }
