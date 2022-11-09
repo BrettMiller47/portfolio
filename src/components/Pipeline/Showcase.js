@@ -8,6 +8,14 @@ export default function PipelineShowcase() {
   
   const cards = [
     {
+      header: 'Start/Sit Deficit',
+      desc: 'Find out who makes the best start/sit decisions in your fantasy football league.',
+      imgSrc: seleniumLogo,
+      iFrameSrc: '',
+      iFrameTitle: '',
+      projectSrc: 'https://github.com/BrettMiller47/start-sit-deficit'
+    },
+    {
       header: 'Authentication Gist',
       desc: "A gist is on the way!  It's time I took a dive into the deep end of token authentication.  As I learn I'll update my gist.",
       imgSrc: githubAltLogo,
@@ -22,15 +30,7 @@ export default function PipelineShowcase() {
       iFrameSrc: '',
       iFrameTitle: '',
       projectSrc: ''
-    },
-    {
-      header: 'FFS! (Fantasy Football Slouch)',
-      desc: 'Every fantasy manager makes bad roster decisions, but who in your league makes the most?',
-      imgSrc: seleniumLogo,
-      iFrameSrc: '',
-      iFrameTitle: '',
-      projectSrc: ''
-    },
+    }
   ];
   
   return (
