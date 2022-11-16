@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../Card/index';
 import arbPic from '../assets/images/arb.png';
 import workforceGif from '../assets/videos/workforceManager.gif';
+import pourLoserPic from '../assets/images/pour-loser.png';
 
 export default function ProjectShowcase() {
 
@@ -23,8 +24,16 @@ export default function ProjectShowcase() {
       projectSrc: 'https://github.com/BrettMiller47/vba-gathering-data-across-multiple-files'
     },
     {
-      header: 'Python Calculator',
-      desc: 'An arbitrage tool for sports betting.',
+      header: 'Pour Loser',
+      desc: 'A Jeopardy trivia game using jService API.',
+      imgSrc: pourLoserPic,
+      iFrameSrc: '',
+      iFrameTitle: '',
+      projectSrc: 'https://github.com/TateFoster/pour-loser-game'
+    },
+    {
+      header: 'Arbitrage Calculator',
+      desc: 'A python tool for evaluating arbitrage scenarios.',
       imgSrc: arbPic,
       iFrameSrc: '',
       iFrameTitle: '',
