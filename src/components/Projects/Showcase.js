@@ -3,6 +3,7 @@ import Card from '../Card/index';
 import arbPic from '../assets/images/arb.png';
 import workforceGif from '../assets/videos/workforceManager.gif';
 import pourLoserPic from '../assets/images/pour-loser.png';
+import scraperPic from '../assets/images/command-line-scraper.png'
 
 export default function ProjectShowcase() {
 
@@ -30,6 +31,14 @@ export default function ProjectShowcase() {
       iFrameSrc: '',
       iFrameTitle: '',
       projectSrc: 'https://github.com/TateFoster/pour-loser-game'
+    },
+    {
+      header: 'Optimal Fantasy Lineups',
+      desc: 'A Selenium tool for web-scraping JSON data.',
+      imgSrc: scraperPic,
+      iFrameSrc: '',
+      iFrameTitle: '',
+      projectSrc: 'https://github.com/TateFoster/cli-optimal-fantasy-lineups'
     },
     {
       header: 'Arbitrage Calculator',
