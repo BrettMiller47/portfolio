@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../Card/index';
 import arbPic from '../assets/images/arb.png';
+import arbArticle from '../assets/images/arb-article.png';
 import workforceGif from '../assets/videos/workforceManager.gif';
 import pourLoserPic from '../assets/images/pour-loser.png';
 import scraperPic from '../assets/images/command-line-scraper.png'
@@ -47,6 +48,14 @@ export default function ProjectShowcase() {
       iFrameSrc: '',
       iFrameTitle: '',
       projectSrc: 'https://github.com/BrettMiller47/Arb'
+    },
+    {
+      header: 'New User Arbitrage',
+      desc: 'A strategy yielding 22.05% with zero risk.',
+      imgSrc: arbArticle,
+      iFrameSrc: '',
+      iFrameTitle: '',
+      projectSrc: 'https://brettmiller47.github.io/new-user-arbitrage/'
     },
   ];
   
