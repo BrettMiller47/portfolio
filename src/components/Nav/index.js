@@ -28,8 +28,8 @@ export default function Nav() {
   useEffect(() => {
     let faviconEl = document.getElementById('favicon');
     darkTheme
-      ? faviconEl.href = 'portfolio/faviconDark.ico'
-      : faviconEl.href = 'portfolio/faviconLight.ico'
+      ? faviconEl.href = 'portfolio/faviconDark.png'
+      : faviconEl.href = 'portfolio/faviconLight.png'
   });
 
 
