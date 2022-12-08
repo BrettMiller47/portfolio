@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.eeab14fa.css",
-    "main.js": "/portfolio/static/js/main.aa86c992.js",
+    "main.js": "/portfolio/static/js/main.3b1e8c76.js",
     "static/js/787.0c3f432a.chunk.js": "/portfolio/static/js/787.0c3f432a.chunk.js",
     "static/media/workforceManager.gif": "/portfolio/static/media/workforceManager.c3a1450d59b65fa9f198.gif",
     "static/media/pour-loser.png": "/portfolio/static/media/pour-loser.8e7fc3ffd84e6000b979.png",
     "static/media/arb.png": "/portfolio/static/media/arb.44f11937a6c583605978.png",
     "static/media/resume.pdf": "/portfolio/static/media/resume.ae73cd0bfa720959c664.pdf",
-    "static/media/arb-article.png": "/portfolio/static/media/arb-article.502bb415ab640b08e43d.png",
+    "static/media/arb-article.png": "/portfolio/static/media/arb-article.328a1fbc4ce9748c3c0d.png",
     "static/media/command-line-scraper.png": "/portfolio/static/media/command-line-scraper.a9f0efa18a5e969ffb11.png",
     "static/media/seleniumLogo.png": "/portfolio/static/media/seleniumLogo.34db6ec24da492c5d3af.png",
     "static/media/githubAltLogo.webp": "/portfolio/static/media/githubAltLogo.cc60961e5080acb77c43.webp",
     "static/media/mernLogo.png": "/portfolio/static/media/mernLogo.797f154ce5fcf7edb6fb.png",
     "index.html": "/portfolio/index.html",
     "main.eeab14fa.css.map": "/portfolio/static/css/main.eeab14fa.css.map",
-    "main.aa86c992.js.map": "/portfolio/static/js/main.aa86c992.js.map",
+    "main.3b1e8c76.js.map": "/portfolio/static/js/main.3b1e8c76.js.map",
     "787.0c3f432a.chunk.js.map": "/portfolio/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eeab14fa.css",
-    "static/js/main.aa86c992.js"
+    "static/js/main.3b1e8c76.js"
   ]
 }
