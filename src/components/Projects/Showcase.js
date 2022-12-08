@@ -26,6 +26,14 @@ export default function ProjectShowcase() {
       projectSrc: 'https://github.com/BrettMiller47/vba-gathering-data-across-multiple-files'
     },
     {
+      header: 'Sportsbook Arbitrage',
+      desc: 'A guide to extract a 21.76% risk-free yield from new user promos.',
+      imgSrc: arbArticle,
+      iFrameSrc: '',
+      iFrameTitle: '',
+      projectSrc: 'https://brettmiller47.github.io/new-user-arbitrage/'
+    },
+    {
       header: 'Pour Loser',
       desc: 'A Jeopardy trivia game using jService API.',
       imgSrc: pourLoserPic,
@@ -48,14 +56,6 @@ export default function ProjectShowcase() {
       iFrameSrc: '',
       iFrameTitle: '',
       projectSrc: 'https://github.com/BrettMiller47/Arb'
-    },
-    {
-      header: 'New User Arbitrage',
-      desc: 'A strategy yielding 22.05% with zero risk.',
-      imgSrc: arbArticle,
-      iFrameSrc: '',
-      iFrameTitle: '',
-      projectSrc: 'https://brettmiller47.github.io/new-user-arbitrage/'
     },
   ];
   
