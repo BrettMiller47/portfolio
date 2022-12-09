@@ -3,6 +3,7 @@ import Card from '../Card/index';
 import arbPic from '../assets/images/arb.png';
 import arbArticle from '../assets/images/arb-article.png';
 import workforceGif from '../assets/videos/workforceManager.gif';
+import beantownGif from '../assets/videos/beantown.gif';
 import pourLoserPic from '../assets/images/pour-loser.png';
 import scraperPic from '../assets/images/command-line-scraper.png'
 
@@ -24,6 +25,14 @@ export default function ProjectShowcase() {
       iFrameSrc: 'https://www.youtube.com/embed/OJUpHsvbuKg',
       iFrameTitle: 'VBA - Automate data gathering across multiple files',
       projectSrc: 'https://github.com/BrettMiller47/vba-gathering-data-across-multiple-files'
+    },
+    {
+      header: 'Excel Solver',
+      desc: 'A case study for optimizing trucking routes.',
+      imgSrc: beantownGif,
+      iFrameSrc: '',
+      iFrameTitle: 'A case study for optimizing trucking routes.',
+      projectSrc: 'https://github.com/BrettMiller47/beantown'
     },
     {
       header: 'Sportsbook Arbitrage',
