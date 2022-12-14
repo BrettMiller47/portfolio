@@ -56,7 +56,7 @@ export default function ProjectShowcase() {
       imgSrc: scraperPic,
       iFrameSrc: '',
       iFrameTitle: '',
-      projectSrc: 'https://github.com/TateFoster/cli-optimal-fantasy-lineups'
+      projectSrc: 'https://github.com/BrettMiller47/cli-optimal-fantasy-lineups'
     },
     {
       header: 'Arbitrage Calculator',
