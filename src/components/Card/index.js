@@ -49,7 +49,16 @@ export default function Card(props) {
       margin: '1rem',
     },
     projSrc: {
-      textDecoration: 'none'    
+      textDecoration: 'underline',
+      textDecorationColor: darkTheme
+        ? (isHover
+          ? '#f77fbe'
+          : '#f4f4d7'
+        )
+        : (isHover
+          ? '#f77fbe'
+          : '#581845'
+        )
     },
     desc: {
       color: darkTheme
