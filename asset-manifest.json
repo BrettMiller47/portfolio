@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.eeab14fa.css",
-    "main.js": "/portfolio/static/js/main.6d34024f.js",
+    "main.js": "/portfolio/static/js/main.b9a708d5.js",
     "static/js/787.0c3f432a.chunk.js": "/portfolio/static/js/787.0c3f432a.chunk.js",
     "static/media/workforceManager.gif": "/portfolio/static/media/workforceManager.c3a1450d59b65fa9f198.gif",
     "static/media/beantown.gif": "/portfolio/static/media/beantown.7a1fcf1842815bda7452.gif",
@@ -10,16 +10,17 @@
     "static/media/resume.pdf": "/portfolio/static/media/resume.0353b769e63ff2345e04.pdf",
     "static/media/arb-article.png": "/portfolio/static/media/arb-article.328a1fbc4ce9748c3c0d.png",
     "static/media/command-line-scraper.png": "/portfolio/static/media/command-line-scraper.a9f0efa18a5e969ffb11.png",
+    "static/media/savings-calc.png": "/portfolio/static/media/savings-calc.c7ddd556a61f87e7fb8c.png",
     "static/media/seleniumLogo.png": "/portfolio/static/media/seleniumLogo.34db6ec24da492c5d3af.png",
     "static/media/githubAltLogo.webp": "/portfolio/static/media/githubAltLogo.cc60961e5080acb77c43.webp",
     "static/media/mernLogo.png": "/portfolio/static/media/mernLogo.797f154ce5fcf7edb6fb.png",
     "index.html": "/portfolio/index.html",
     "main.eeab14fa.css.map": "/portfolio/static/css/main.eeab14fa.css.map",
-    "main.6d34024f.js.map": "/portfolio/static/js/main.6d34024f.js.map",
+    "main.b9a708d5.js.map": "/portfolio/static/js/main.b9a708d5.js.map",
     "787.0c3f432a.chunk.js.map": "/portfolio/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eeab14fa.css",
-    "static/js/main.6d34024f.js"
+    "static/js/main.b9a708d5.js"
   ]
 }
