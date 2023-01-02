@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../Card/index';
+import savingsPic from '../assets/images/savings-calc.png';
 import arbPic from '../assets/images/arb.png';
 import arbArticle from '../assets/images/arb-article.png';
 import workforceGif from '../assets/videos/workforceManager.gif';
@@ -27,7 +28,7 @@ export default function ProjectShowcase() {
       projectSrc: 'https://github.com/BrettMiller47/vba-gathering-data-across-multiple-files'
     },
     {
-      header: 'Excel Solver',
+      header: 'Optimization Solver',
       desc: 'A case study for optimizing trucking routes.',
       imgSrc: beantownGif,
       iFrameSrc: '',
@@ -35,20 +36,28 @@ export default function ProjectShowcase() {
       projectSrc: 'https://github.com/BrettMiller47/beantown'
     },
     {
+      header: 'Savings Calculator',
+      desc: 'An Excel tool to estimate savings given a certain salary.',
+      imgSrc: savingsPic,
+      iFrameSrc: '',
+      iFrameTitle: '',
+      projectSrc: 'https://github.com/BrettMiller47/savings-calcuator/blob/main/README.md'
+    },
+    {
       header: 'Sportsbook Arbitrage',
-      desc: 'A guide to extract a 21.76% risk-free yield from new user promos.',
+      desc: 'A strategical guide to extract a 21.76% risk-free yield from new user promos.',
       imgSrc: arbArticle,
       iFrameSrc: '',
       iFrameTitle: '',
       projectSrc: 'https://brettmiller47.github.io/new-user-arbitrage/'
     },
     {
-      header: 'Pour Loser',
-      desc: 'A Jeopardy trivia game using jService API.',
-      imgSrc: pourLoserPic,
+      header: 'Python Arbitrage Calculator',
+      desc: 'A tool for evaluating arbitrage scenarios.',
+      imgSrc: arbPic,
       iFrameSrc: '',
       iFrameTitle: '',
-      projectSrc: 'https://github.com/TateFoster/pour-loser-game'
+      projectSrc: 'https://github.com/BrettMiller47/Arb'
     },
     {
       header: 'Optimal Fantasy Lineups',
@@ -59,12 +68,12 @@ export default function ProjectShowcase() {
       projectSrc: 'https://github.com/BrettMiller47/cli-optimal-fantasy-lineups'
     },
     {
-      header: 'Arbitrage Calculator',
-      desc: 'A python tool for evaluating arbitrage scenarios.',
-      imgSrc: arbPic,
+      header: 'Pour Loser',
+      desc: 'A Jeopardy trivia game using jService API.',
+      imgSrc: pourLoserPic,
       iFrameSrc: '',
       iFrameTitle: '',
-      projectSrc: 'https://github.com/BrettMiller47/Arb'
+      projectSrc: 'https://github.com/TateFoster/pour-loser-game'
     },
   ];
   
