@@ -8,6 +8,7 @@ import beantownGif from '../assets/videos/beantown.gif';
 import pourLoserPic from '../assets/images/pour-loser.png';
 import scraperPic from '../assets/images/command-line-scraper.png'
 import pySqlPic from '../assets/images/py-sql.png'
+import qrPic from '../assets/images/qr.png'
 
 export default function ProjectShowcase() {
 
@@ -50,7 +51,15 @@ export default function ProjectShowcase() {
       imgSrc: savingsPic,
       iFrameSrc: '',
       iFrameTitle: '',
-      projectSrc: 'https://github.com/BrettMiller47/savings-calcuator/blob/main/README.md'
+      projectSrc: 'https://github.com/BrettMiller47/savings-calcuator'
+    },
+    {
+      header: 'Python QR Code Generator',
+      desc: 'Create location, wifi access, and contact info QR codes.',
+      imgSrc: qrPic,
+      iFrameSrc: '',
+      iFrameTitle: '',
+      projectSrc: 'https://github.com/BrettMiller47/qr-python-generator'
     },
     {
       header: 'Sportsbook Arbitrage',
