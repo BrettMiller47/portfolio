@@ -14,6 +14,14 @@ export default function ProjectShowcase() {
 
   const cards = [
     {
+      header: 'Truck Routing Optimizer',
+      desc: 'A Excel solver solution for optimizing trucking routes.',
+      imgSrc: beantownGif,
+      iFrameSrc: '',
+      iFrameTitle: 'A case study for optimizing trucking routes.',
+      projectSrc: 'https://github.com/BrettMiller47/beantown'
+    },
+    {
       header: 'Python & SQL Database',
       desc: 'CRUD operations using Python and MySQL.',
       imgSrc: pySqlPic,
@@ -36,14 +44,6 @@ export default function ProjectShowcase() {
       iFrameSrc: 'https://www.youtube.com/embed/OJUpHsvbuKg',
       iFrameTitle: 'VBA - Automate data gathering across multiple files',
       projectSrc: 'https://github.com/BrettMiller47/vba-gathering-data-across-multiple-files'
-    },
-    {
-      header: 'Optimization Solver',
-      desc: 'A case study for optimizing trucking routes.',
-      imgSrc: beantownGif,
-      iFrameSrc: '',
-      iFrameTitle: 'A case study for optimizing trucking routes.',
-      projectSrc: 'https://github.com/BrettMiller47/beantown'
     },
     {
       header: 'Savings Calculator',
