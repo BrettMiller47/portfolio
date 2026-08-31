@@ -16,7 +16,7 @@ export default function ProjectShowcase() {
     
     {
       header: 'Sportsbook Arbitrage',
-      desc: 'A strategical guide to extract a 21.76% risk-free yield from new user promos.',
+      desc: 'A strategical guide to extract a 21.76% risk-free yield from new user promos.  Please be aware the last update was in 2022.',
       imgSrc: arbArticle,
       iFrameSrc: '',
       iFrameTitle: '',
@@ -24,7 +24,7 @@ export default function ProjectShowcase() {
     },
     {
       header: 'Python Arbitrage Calculator',
-      desc: 'A tool for evaluating arbitrage scenarios.',
+      desc: 'A tool for evaluating arbitrage scenarios. Specifically designed, but not limited to, futures wagers.',
       imgSrc: arbPic,
       iFrameSrc: '',
       iFrameTitle: '',
@@ -32,7 +32,7 @@ export default function ProjectShowcase() {
     },
     {
       header: 'Truck Routing Optimizer',
-      desc: 'A Excel solver solution for optimizing trucking routes.',
+      desc: 'An Excel solver solution for optimizing trucking routes.',
       imgSrc: beantownGif,
       iFrameSrc: '',
       iFrameTitle: 'A case study for optimizing trucking routes.',
