@@ -13,6 +13,23 @@ import qrPic from '../assets/images/qr.png'
 export default function ProjectShowcase() {
 
   const cards = [
+    
+    {
+      header: 'Sportsbook Arbitrage',
+      desc: 'A strategical guide to extract a 21.76% risk-free yield from new user promos.',
+      imgSrc: arbArticle,
+      iFrameSrc: '',
+      iFrameTitle: '',
+      projectSrc: 'https://brettmiller47.github.io/new-user-arbitrage/'
+    },
+    {
+      header: 'Python Arbitrage Calculator',
+      desc: 'A tool for evaluating arbitrage scenarios.',
+      imgSrc: arbPic,
+      iFrameSrc: '',
+      iFrameTitle: '',
+      projectSrc: 'https://github.com/BrettMiller47/Arb'
+    },
     {
       header: 'Truck Routing Optimizer',
       desc: 'A Excel solver solution for optimizing trucking routes.',
@@ -45,14 +62,14 @@ export default function ProjectShowcase() {
       iFrameTitle: 'VBA - Automate data gathering across multiple files',
       projectSrc: 'https://github.com/BrettMiller47/vba-gathering-data-across-multiple-files'
     },
-    {
-      header: 'Savings Calculator',
-      desc: 'An Excel tool to estimate savings given a certain salary.',
-      imgSrc: savingsPic,
-      iFrameSrc: '',
-      iFrameTitle: '',
-      projectSrc: 'https://github.com/BrettMiller47/savings-calcuator'
-    },
+    // {
+    //   header: 'Savings Calculator',
+    //   desc: 'An Excel tool to estimate savings given a certain salary.',
+    //   imgSrc: savingsPic,
+    //   iFrameSrc: '',
+    //   iFrameTitle: '',
+    //   projectSrc: 'https://github.com/BrettMiller47/savings-calcuator'
+    // },
     {
       header: 'Python QR Code Generator',
       desc: 'Create location, wifi access, and contact info QR codes.',
@@ -62,22 +79,6 @@ export default function ProjectShowcase() {
       projectSrc: 'https://github.com/BrettMiller47/qr-python-generator'
     },
     {
-      header: 'Sportsbook Arbitrage',
-      desc: 'A strategical guide to extract a 21.76% risk-free yield from new user promos.',
-      imgSrc: arbArticle,
-      iFrameSrc: '',
-      iFrameTitle: '',
-      projectSrc: 'https://brettmiller47.github.io/new-user-arbitrage/'
-    },
-    {
-      header: 'Python Arbitrage Calculator',
-      desc: 'A tool for evaluating arbitrage scenarios.',
-      imgSrc: arbPic,
-      iFrameSrc: '',
-      iFrameTitle: '',
-      projectSrc: 'https://github.com/BrettMiller47/Arb'
-    },
-    {
       header: 'Optimal Fantasy Lineups',
       desc: 'A Selenium tool for web-scraping JSON data.',
       imgSrc: scraperPic,
@@ -85,14 +86,14 @@ export default function ProjectShowcase() {
       iFrameTitle: '',
       projectSrc: 'https://github.com/BrettMiller47/cli-optimal-fantasy-lineups'
     },
-    {
-      header: 'Pour Loser',
-      desc: 'A Jeopardy trivia game using jService API.',
-      imgSrc: pourLoserPic,
-      iFrameSrc: '',
-      iFrameTitle: '',
-      projectSrc: 'https://github.com/TateFoster/pour-loser-game'
-    },
+    // {
+    //   header: 'Pour Loser',
+    //   desc: 'A Jeopardy trivia game using jService API.',
+    //   imgSrc: pourLoserPic,
+    //   iFrameSrc: '',
+    //   iFrameTitle: '',
+    //   projectSrc: 'https://github.com/TateFoster/pour-loser-game'
+    // },
   ];
   
   return (
