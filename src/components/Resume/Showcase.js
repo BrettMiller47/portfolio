@@ -5,13 +5,21 @@ export default function ResumeShowcase() {
   
   const featuredRows = [
     {
+      title: "Senior Financial Analyst",
+      summary: "Mack Trucks, Inc.",
+      listItems: [
+        " - Cross-functional support including third-party manufacturing",
+        " - International work experience",
+        " - Power BI reporting and analysis",
+        " - Python web scraping and data analysis"
+      ]
+    },{
       title: "Full Stack Web Development",
       summary: "University of Denver",
       listItems: [
         " - Git",
         " - MERN",
         " - MongoDB and MySQL",
-        " - Agile and Computer Science",
         " - HTML5, CSS3, JavaScript, jQuery",
       ]
     },
@@ -21,7 +29,6 @@ export default function ResumeShowcase() {
       listItems: [
         " - Supervision",
         " - VBA programming",
-        " - Fostering teamwork",
         " - Actionable data analysis",
         " - Root-cause problem solving",
       ]
