@@ -9,27 +9,16 @@ export default function ResumeShowcase() {
       summary: "Mack Trucks, Inc.",
       listItems: [
         " - Cross-functional support including third-party manufacturing",
-        " - International work experience",
         " - Power BI reporting and analysis",
         " - Python web scraping and data analysis"
-      ]
-    },{
-      title: "Full Stack Web Development",
-      summary: "University of Denver",
-      listItems: [
-        " - Git",
-        " - MERN",
-        " - MongoDB and MySQL",
-        " - HTML5, CSS3, JavaScript, jQuery",
       ]
     },
     {
       title: "Danaher's Operations Leadership Program",
       summary: "A two-year rotational program involving:",
       listItems: [
-        " - Supervision",
+        " - Supervision experience",
         " - VBA programming",
-        " - Actionable data analysis",
         " - Root-cause problem solving",
       ]
     },
@@ -41,6 +30,16 @@ export default function ResumeShowcase() {
         " - Certificate in Real Estate Analysis",
       ]
     },
+    {
+      title: "Full Stack Web Development",
+      summary: "University of Denver",
+      listItems: [
+        " - Git",
+        " - MERN",
+        " - MongoDB and MySQL",
+        " - HTML5, CSS3, JavaScript, jQuery",
+      ]
+    }
   ];
 
   const { darkTheme } = useTheme();

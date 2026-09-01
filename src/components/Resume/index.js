@@ -22,8 +22,8 @@ export default function Resume() {
   return (
     <div className='text-center' style={styles.gallery}>
       <div className='container-fluid' style={styles.container}>
-        <Button />
         <ResumeShowcase />
+        <Button />
       </div>
     </div>
   );
