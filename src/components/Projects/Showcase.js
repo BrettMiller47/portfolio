@@ -16,7 +16,7 @@ export default function ProjectShowcase() {
     
     {
       header: 'Sportsbook Arbitrage',
-      desc: 'A strategical guide to extract a 21.76% risk-free yield from new user promos.  Please be aware the last update was in 2022.',
+      desc: 'A strategic guide to extract a 21.76% risk-free yield from new user promos.  Please be aware the last update was in 2022.',
       imgSrc: arbArticle,
       iFrameSrc: '',
       iFrameTitle: '',
@@ -31,20 +31,20 @@ export default function ProjectShowcase() {
       projectSrc: 'https://github.com/BrettMiller47/Arb'
     },
     {
-      header: 'Truck Routing Optimizer',
-      desc: 'An Excel solver solution for optimizing trucking routes.',
-      imgSrc: beantownGif,
-      iFrameSrc: '',
-      iFrameTitle: 'A case study for optimizing trucking routes.',
-      projectSrc: 'https://github.com/BrettMiller47/beantown'
-    },
-    {
       header: 'Python & SQL Database',
       desc: 'CRUD operations using Python and MySQL.',
       imgSrc: pySqlPic,
       iFrameSrc: '',
       iFrameTitle: '',
       projectSrc: 'https://github.com/BrettMiller47/python-sql-example'
+    },
+    {
+      header: 'Truck Routing Optimizer',
+      desc: 'An Excel solver solution for optimizing trucking routes.',
+      imgSrc: beantownGif,
+      iFrameSrc: '',
+      iFrameTitle: 'A case study for optimizing trucking routes.',
+      projectSrc: 'https://github.com/BrettMiller47/beantown'
     },
     {
       header: 'MySQL Workforce Manager',
